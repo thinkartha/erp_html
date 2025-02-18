@@ -13,7 +13,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+	<title>ERP Accelerator.</title>
 	<!-- CSS files -->
 	<link href="./dist/css/tabler.min.css?1738096685" rel="stylesheet" />
 	<link href="./dist/css/tabler-flags.min.css?1738096685" rel="stylesheet" />
@@ -787,7 +787,7 @@
 								Overview
 							</div>
 							<h2 class="page-title">
-								Vertical transparent layout
+								Document entry
 							</h2>
 						</div>
 						<!-- Page title actions -->
@@ -959,9 +959,36 @@
 								</div>
 								<div class="card-header">
 									<h3 class="card-title">Listen Recording</h3>
+
+								</div>
+								<div class="card-body">
+
 									<audio controls>
 										<source src="{{ audio.path }}" type="audio/wav">
 									</audio>
+									<div class="mb-3">
+										<br>
+										<label class="form-label required">Controls</label>
+										<div>
+											<small class="form-hint">Check for your browser compatablility.</small>
+										</div>
+									</div>
+									<!-- Play/Pause Button -->
+									<button onclick="togglePlay()">Play/Pause</button>
+
+									<!-- Volume Control -->
+									<label for="volume">Volume:</label>
+									<input type="range" id="volume" min="0" max="1" step="0.1" value="1"
+										onchange="setVolume(this.value)">
+
+									<!-- Playback Speed Control -->
+									<label for="speed">Speed:</label>
+									<select id="speed" onchange="setSpeed(this.value)">
+										<option value="0.5">0.5x</option>
+										<option value="1" selected>1x</option>
+										<option value="1.5">1.5x</option>
+										<option value="2">2x</option>
+									</select>
 								</div>
 							</form>
 						</div>
@@ -1012,7 +1039,7 @@
 														</div>
 														<div class="col">
 															<div class="text-truncate">
-																<strong>Vivek Varanasi</strong> created a recording and 
+																<strong>Vivek Varanasi</strong> created a recording and
 																<strong>saved</strong>.
 															</div>
 															<div class="text-secondary">24 hours ago</div>
@@ -1027,7 +1054,8 @@
 														</div>
 														<div class="col">
 															<div class="text-truncate">
-																<strong>Jaipal Kothakapu</strong> access this page but not saved recording.
+																<strong>Jaipal Kothakapu</strong> access this page but
+																not saved recording.
 															</div>
 															<div class="text-secondary">2 days ago</div>
 														</div>
@@ -1037,11 +1065,12 @@
 												<div>
 													<div class="row">
 														<div class="col-auto">
-															<span class="avatar avatar-1">JK</span>
+															<span class="avatar avatar-1">KD</span>
 														</div>
 														<div class="col">
 															<div class="text-truncate">
-																<strong>Vivek Varanasi</strong> created a recording
+																<strong>Krishna Dheeraj
+																</strong> created a recording
 																and <strong>saved</strong>.
 															</div>
 															<div class="text-secondary">2 days ago</div>
@@ -1071,7 +1100,8 @@
 														</div>
 														<div class="col">
 															<div class="text-truncate">
-																<strong>Jaipal Kothakapu</strong> created first recording
+																<strong>Jaipal Kothakapu</strong> created first
+																recording
 																and <strong>saved.</strong>.
 															</div>
 															<div class="text-secondary">2 days ago</div>
@@ -1095,6 +1125,7 @@
 							<div class="card">
 								<div class="card-header">
 									<h3 class="card-title">Recordings</h3>
+									
 								</div>
 								<div class="card-body border-bottom py-3">
 									<div class="d-flex">
@@ -1107,11 +1138,13 @@
 											entries
 										</div>
 										<div class="ms-auto text-secondary">
+											
 											Search:
 											<div class="ms-2 d-inline-block">
 												<input type="text" class="form-control form-control-sm"
 													aria-label="Search invoice">
 											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -1177,7 +1210,7 @@
 													</audio>
 												</td>
 												<td>
-													Vivek Varanasi
+													Krishna Dheeraj
 												</td>
 												<td>
 													2/16/2025 05:00
@@ -1204,7 +1237,8 @@
 											<tr>
 												<td><input class="form-check-input m-0 align-middle" type="checkbox"
 														aria-label="Select invoice"></td>
-												<td><a href="invoice.html" class="text-reset" tabindex="-1">Minimum account assignments</a></td>
+												<td><a href="invoice.html" class="text-reset" tabindex="-1">Minimum
+														account assignments</a></td>
 												<td>
 													<audio controls>
 														<source src="{{ audio.path }}" type="audio/wav">
@@ -1238,7 +1272,8 @@
 											<tr>
 												<td><input class="form-check-input m-0 align-middle" type="checkbox"
 														aria-label="Select invoice"></td>
-												<td><a href="invoice.html" class="text-reset" tabindex="-1">Jaipals Introduction and high level summary</a></td>
+												<td><a href="invoice.html" class="text-reset" tabindex="-1">Jaipals
+														Introduction and high level summary</a></td>
 												<td>
 													<audio controls>
 														<source src="{{ audio.path }}" type="audio/wav">
@@ -1269,7 +1304,40 @@
 													</span>
 												</td>
 											</tr>
-											
+											<tr>
+												<td><input class="form-check-input m-0 align-middle" type="checkbox"
+														aria-label="Select invoice"></td>
+												<td><a href="invoice.html" class="text-reset" tabindex="-1">First Recording check</a></td>
+												<td>
+													<audio controls>
+														<source src="{{ audio.path }}" type="audio/wav">
+													</audio>
+												</td>
+												<td>
+													Jaipal Kothakapu
+												</td>
+												<td>
+													2/13/2025 10:50
+												</td>
+												<td>
+													<span class="badge bg-warning me-1"></span> Not Consolidated
+												</td>
+												<td class="text-end">
+													<span class="dropdown">
+														<button class="btn dropdown-toggle align-text-top"
+															data-bs-boundary="viewport"
+															data-bs-toggle="dropdown">Actions</button>
+														<div class="dropdown-menu dropdown-menu-end">
+															<a class="dropdown-item" href="#">
+																Action
+															</a>
+															<a class="dropdown-item" href="#">
+																Another action
+															</a>
+														</div>
+													</span>
+												</td>
+											</tr>
 										</tbody>
 									</table>
 								</div>
@@ -1309,7 +1377,11 @@
 										</li>
 									</ul>
 								</div>
+								<div class="card-footer text-end">
+									<a href="consolidation.html"><button type="submit" class="btn btn-primary">consolidate</button></a>
+								</div>
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -1344,6 +1416,28 @@
 	<!-- Tabler Core -->
 	<script src="./dist/js/tabler.min.js?1738096685" defer></script>
 	<script src="./dist/js/demo.min.js?1738096685" defer></script>
+	<script>
+		var audio = document.getElementById("audio");
+
+		// Toggle play/pause
+		function togglePlay() {
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+
+		// Set volume
+		function setVolume(value) {
+			audio.volume = value;
+		}
+
+		// Set playback speed
+		function setSpeed(value) {
+			audio.playbackRate = value;
+		}
+	</script>
 </body>
 
 </html>
