@@ -1,0 +1,1078 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0
+* @link https://tabler.io
+* Copyright 2018-2025 The Tabler Authors
+* Copyright 2018-2025 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <!-- CSS files -->
+    <link href="./dist/css/tabler.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/tabler-flags.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/tabler-socials.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/tabler-payments.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/tabler-vendors.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/tabler-marketing.min.css?1738096685" rel="stylesheet" />
+    <link href="./dist/css/demo.min.css?1738096685" rel="stylesheet" />
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+    </style>
+</head>
+
+<body>
+    <script src="./dist/js/demo-theme.min.js?1738096685"></script>
+    <div class="page">
+        <!-- Sidebar -->
+        <aside class="navbar navbar-vertical navbar-expand-lg navbar-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-menu"
+                    aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-brand navbar-brand-autodark">
+                    ERP Accelerator
+                </div>
+                <div class="navbar-nav flex-row d-lg-none">
+                    <div class="nav-item d-none d-lg-flex me-3">
+                        <div class="btn-list">
+                            <a href="https://github.com/tabler/tabler" class="btn btn-5" target="_blank"
+                                rel="noreferrer">
+                                <!-- Download SVG icon from http://tabler.io/icons/icon/brand-github -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-2">
+                                    <path
+                                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                </svg>
+                                Source code
+                            </a>
+                            <a href="https://github.com/sponsors/codecalm" class="btn btn-6" target="_blank"
+                                rel="noreferrer">
+                                <!-- Download SVG icon from http://tabler.io/icons/icon/heart -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon text-pink icon-2">
+                                    <path
+                                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                </svg>
+                                Sponsor
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-flex">
+                        <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                            <!-- Download SVG icon from http://tabler.io/icons/icon/moon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-1">
+                                <path
+                                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                            </svg>
+                        </a>
+                        <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom">
+                            <!-- Download SVG icon from http://tabler.io/icons/icon/sun -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-1">
+                                <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path
+                                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                            </svg>
+                        </a>
+                        <div class="nav-item dropdown d-none d-md-flex me-3">
+                            <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1"
+                                aria-label="Show notifications">
+                                <!-- Download SVG icon from http://tabler.io/icons/icon/bell -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="icon icon-1">
+                                    <path
+                                        d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+                                    <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+                                </svg>
+                                <span class="badge bg-red"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-end dropdown-menu-card">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Last updates</h3>
+                                    </div>
+                                    <div class="list-group list-group-flush list-group-hoverable">
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-red d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 1</a>
+                                                    <div class="d-block text-secondary text-truncate mt-n1">
+                                                        Change deprecated html tags to text decoration classes (#29604)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler.io/icons/icon/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="icon text-muted icon-2">
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 2</a>
+                                                    <div class="d-block text-secondary text-truncate mt-n1">
+                                                        justify-content:between ⇒ justify-content:space-between (#29734)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions show">
+                                                        <!-- Download SVG icon from http://tabler.io/icons/icon/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="icon text-yellow icon-2">
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span class="status-dot d-block"></span></div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 3</a>
+                                                    <div class="d-block text-secondary text-truncate mt-n1">
+                                                        Update change-version.js (#29736)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler.io/icons/icon/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="icon text-muted icon-2">
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-group-item">
+                                            <div class="row align-items-center">
+                                                <div class="col-auto"><span
+                                                        class="status-dot status-dot-animated bg-green d-block"></span>
+                                                </div>
+                                                <div class="col text-truncate">
+                                                    <a href="#" class="text-body d-block">Example 4</a>
+                                                    <div class="d-block text-secondary text-truncate mt-n1">
+                                                        Regenerate package-lock.json (#29730)
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <a href="#" class="list-group-item-actions">
+                                                        <!-- Download SVG icon from http://tabler.io/icons/icon/star -->
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="icon text-muted icon-2">
+                                                            <path
+                                                                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown"
+                            aria-label="Open user menu">
+                            <span class="avatar avatar-sm"
+                                style="background-image: url(./static/avatars/000m.jpg)"></span>
+                            <div class="d-none d-xl-block ps-2">
+                                <div>Paweł Kuna</div>
+                                <div class="mt-1 small text-secondary">UI Designer</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                            <a href="#" class="dropdown-item">Status</a>
+                            <a href="./profile.html" class="dropdown-item">Profile</a>
+                            <a href="#" class="dropdown-item">Feedback</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="./settings.html" class="dropdown-item">Settings</a>
+                            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="sidebar-menu">
+                    <ul class="navbar-nav pt-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/home -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Home
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                                data-bs-auto-close="false" role="button" aria-expanded="false">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/package -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+                                        <path d="M12 12l8 -4.5" />
+                                        <path d="M12 12l0 9" />
+                                        <path d="M12 12l-8 -4.5" />
+                                        <path d="M16 5.25l-8 4.5" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Interface
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./accordion.html">
+                                            Accordion
+                                        </a>
+                                        <a class="dropdown-item" href="./alerts.html">
+                                            Alerts
+                                        </a>
+                                        <div class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#sidebar-authentication"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                                aria-expanded="false">
+                                                Authentication
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a href="./sign-in.html" class="dropdown-item">
+                                                    Sign in
+                                                </a>
+                                                <a href="./sign-in-link.html" class="dropdown-item">
+                                                    Sign in link
+                                                </a>
+                                                <a href="./sign-in-illustration.html" class="dropdown-item">
+                                                    Sign in with illustration
+                                                </a>
+                                                <a href="./sign-in-cover.html" class="dropdown-item">
+                                                    Sign in with cover
+                                                </a>
+                                                <a href="./sign-up.html" class="dropdown-item">
+                                                    Sign up
+                                                </a>
+                                                <a href="./forgot-password.html" class="dropdown-item">
+                                                    Forgot password
+                                                </a>
+                                                <a href="./terms-of-service.html" class="dropdown-item">
+                                                    Terms of service
+                                                </a>
+                                                <a href="./auth-lock.html" class="dropdown-item">
+                                                    Lock screen
+                                                </a>
+                                                <a href="./2-step-verification.html" class="dropdown-item">
+                                                    2 step verification
+                                                </a>
+                                                <a href="./2-step-verification-code.html" class="dropdown-item">
+                                                    2 step verification code
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="./badges.html">
+                                            Badges
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./blank.html">
+                                            Blank page
+                                        </a>
+                                        <a class="dropdown-item" href="./buttons.html">
+                                            Buttons
+                                        </a>
+                                        <div class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#sidebar-cards"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                                aria-expanded="false">
+                                                Cards
+                                                <span
+                                                    class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a href="./cards.html" class="dropdown-item">
+                                                    Sample cards
+                                                </a>
+                                                <a href="./card-actions.html" class="dropdown-item">
+                                                    Card actions
+                                                    <span
+                                                        class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                                </a>
+                                                <a href="./cards-masonry.html" class="dropdown-item">
+                                                    Cards Masonry
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="./carousel.html">
+                                            Carousel
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./charts.html">
+                                            Charts
+                                        </a>
+                                        <a class="dropdown-item" href="./colorpicker.html">
+                                            Color picker
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./colors.html">
+                                            Colors
+                                        </a>
+                                        <a class="dropdown-item" href="./datagrid.html">
+                                            Data grid
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./datatables.html">
+                                            Datatables
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./dropdowns.html">
+                                            Dropdowns
+                                        </a>
+                                        <a class="dropdown-item" href="./dropzone.html">
+                                            Dropzone
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <div class="dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#sidebar-error"
+                                                data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
+                                                aria-expanded="false">
+                                                Error pages
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a href="./error-404.html" class="dropdown-item">
+                                                    404 page
+                                                </a>
+                                                <a href="./error-500.html" class="dropdown-item">
+                                                    500 page
+                                                </a>
+                                                <a href="./error-maintenance.html" class="dropdown-item">
+                                                    Maintenance page
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="./flags.html">
+                                            Flags
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./inline-player.html">
+                                            Inline player
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./lightbox.html">
+                                            Lightbox
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./lists.html">
+                                            Lists
+                                        </a>
+                                        <a class="dropdown-item" href="./modals.html">
+                                            Modal
+                                        </a>
+                                        <a class="dropdown-item" href="./maps.html">
+                                            Map
+                                        </a>
+                                        <a class="dropdown-item" href="./map-fullsize.html">
+                                            Map fullsize
+                                        </a>
+                                        <a class="dropdown-item" href="./maps-vector.html">
+                                            Map vector
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./markdown.html">
+                                            Markdown
+                                        </a>
+                                        <a class="dropdown-item" href="./navigation.html">
+                                            Navigation
+                                        </a>
+                                        <a class="dropdown-item" href="./offcanvas.html">
+                                            Offcanvas
+                                        </a>
+                                        <a class="dropdown-item" href="./pagination.html">
+                                            Pagination
+                                        </a>
+                                        <a class="dropdown-item" href="./placeholder.html">
+                                            Placeholder
+                                        </a>
+                                        <a class="dropdown-item" href="./social-icons.html">
+                                            Social icons
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./stars-rating.html">
+                                            Stars rating
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./steps.html">
+                                            Steps
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./tables.html">
+                                            Tables
+                                        </a>
+                                        <a class="dropdown-item" href="./tabs.html">
+                                            Tabs
+                                        </a>
+                                        <a class="dropdown-item" href="./tags.html">
+                                            Tags
+                                        </a>
+                                        <a class="dropdown-item" href="./tinymce.html">
+                                            TinyMCE
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./toasts.html">
+                                            Toasts
+                                        </a>
+                                        <a class="dropdown-item" href="./typography.html">
+                                            Typography
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./form-elements.html">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/checkbox -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M9 11l3 3l8 -8" />
+                                        <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Forms
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown"
+                                data-bs-auto-close="false" role="button" aria-expanded="false">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/star -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path
+                                            d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Extra
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./activity.html">
+                                            Activity
+                                        </a>
+                                        <a class="dropdown-item" href="./chat.html">
+                                            Chat
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./cookie-banner.html">
+                                            Cookie banner
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./empty.html">
+                                            Empty page
+                                        </a>
+                                        <a class="dropdown-item" href="./faq.html">
+                                            FAQ
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./gallery.html">
+                                            Gallery
+                                        </a>
+                                        <a class="dropdown-item" href="./invoice.html">
+                                            Invoice
+                                        </a>
+                                        <a class="dropdown-item" href="./job-listing.html">
+                                            Job listing
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./license.html">
+                                            License
+                                        </a>
+                                        <a class="dropdown-item" href="./logs.html">
+                                            Logs
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./marketing/index.html">
+                                            Marketing
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./music.html">
+                                            Music
+                                        </a>
+                                        <a class="dropdown-item" href="./page-loader.html">
+                                            Page loader
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./payment-providers.html">
+                                            Payment providers
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./photogrid.html">
+                                            Photogrid
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./pricing.html">
+                                            Pricing cards
+                                        </a>
+                                        <a class="dropdown-item" href="./pricing-table.html">
+                                            Pricing table
+                                        </a>
+                                        <a class="dropdown-item" href="./search-results.html">
+                                            Search results
+                                        </a>
+                                        <a class="dropdown-item" href="./settings.html">
+                                            Settings
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./tasks.html">
+                                            Tasks
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./trial-ended.html">
+                                            Trial ended
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./uptime.html">
+                                            Uptime monitor
+                                        </a>
+                                        <a class="dropdown-item" href="./users.html">
+                                            Users
+                                        </a>
+                                        <a class="dropdown-item" href="./widgets.html">
+                                            Widgets
+                                        </a>
+                                        <a class="dropdown-item" href="./wizard.html">
+                                            Wizard
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-bs-toggle="dropdown"
+                                data-bs-auto-close="false" role="button" aria-expanded="true">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/layout-2 -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path
+                                            d="M4 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                        <path
+                                            d="M4 13m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                        <path
+                                            d="M14 4m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                        <path
+                                            d="M14 15m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Layout
+                                </span>
+                            </a>
+                            <div class="dropdown-menu show">
+                                <div class="dropdown-menu-columns">
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./layout-boxed.html">
+                                            Boxed
+                                            <span class="badge badge-sm bg-green-lt text-uppercase ms-auto">New</span>
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-combo.html">
+                                            Combined
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-condensed.html">
+                                            Condensed
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-fluid.html">
+                                            Fluid
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-fluid-vertical.html">
+                                            Fluid vertical
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-horizontal.html">
+                                            Horizontal
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-navbar-dark.html">
+                                            Navbar dark
+                                        </a>
+                                    </div>
+                                    <div class="dropdown-menu-column">
+                                        <a class="dropdown-item" href="./layout-navbar-overlap.html">
+                                            Navbar overlap
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-navbar-sticky.html">
+                                            Navbar sticky
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-vertical-right.html">
+                                            Right vertical
+                                        </a>
+                                        <a class="dropdown-item" href="./layout-rtl.html">
+                                            RTL mode
+                                        </a>
+                                        <a class="dropdown-item" href="./consolidation.html">
+                                            Consolidation
+                                        </a>
+                                        <a class="dropdown-item active" href="./layout-vertical-transparent.html">
+                                            Vertical transparent
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./icons.html">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/ghost -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path
+                                            d="M5 11a7 7 0 0 1 14 0v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-7" />
+                                        <path d="M10 10l.01 0" />
+                                        <path d="M14 10l.01 0" />
+                                        <path d="M10 14a3.5 3.5 0 0 0 4 0" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    5844 icons
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./emails.html">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/mail-opened -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+                                        <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                                        <path d="M3 19l6 -6" />
+                                        <path d="M15 13l6 6" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Emails
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./illustrations.html">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/brand-figma -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                        <path
+                                            d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
+                                        <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Illustrations
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-help" data-bs-toggle="dropdown"
+                                data-bs-auto-close="false" role="button" aria-expanded="false">
+                                <span class="nav-link-icon d-md-none d-lg-inline-block">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/lifebuoy -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-1">
+                                        <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                        <path d="M15 15l3.35 3.35" />
+                                        <path d="M9 15l-3.35 3.35" />
+                                        <path d="M5.65 5.65l3.35 3.35" />
+                                        <path d="M18.35 5.65l-3.35 3.35" />
+                                    </svg>
+                                </span>
+                                <span class="nav-link-title">
+                                    Help
+                                </span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://tabler.io/docs" target="_blank" rel="noopener">
+                                    Documentation
+                                </a>
+                                <a class="dropdown-item" href="./changelog.html">
+                                    Changelog
+                                </a>
+                                <a class="dropdown-item" href="https://github.com/tabler/tabler" target="_blank"
+                                    rel="noopener">
+                                    Source code
+                                </a>
+                                <a class="dropdown-item text-pink" href="https://github.com/sponsors/codecalm"
+                                    target="_blank" rel="noopener">
+                                    <!-- Download SVG icon from http://tabler.io/icons/icon/heart -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="icon icon-inline me-1 icon-2">
+                                        <path
+                                            d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                    </svg>
+                                    Sponsor project!
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <!-- Page header -->
+            <div class="page-header d-print-none">
+                <div class="container-xl">
+                    <div class="row g-2 align-items-center">
+                        <div class="col">
+                            <!-- Page pre-title -->
+                            <div class="page-pretitle">
+                                Overview
+                            </div>
+                            <h2 class="page-title">
+                                AI - Generated SAP Format
+                            </h2>
+                        </div>
+                        <!-- Page title actions -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- Page body -->
+            <div class="page-body">
+
+                <div class="margin"></div>
+                <div class="container-xl">
+                    <div class="row row-deck row-cards">
+                        <div class="col-12">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1>Consolidated Overview: General Ledger Account Document Postings in SAP</h1>
+
+                                    <h2>Enter G/L Account Document (Single-Screen Transaction)</h2>
+                                    <p>
+                                        This function allows posting to all ledgers in your General Ledger Accounting
+                                        system. It is used to record entries across multiple ledgers with a single
+                                        transaction.
+                                    </p>
+
+                                    <h2>Enter G/L Account Document for Ledger Group (Single-Screen Transaction)</h2>
+                                    <p>
+                                        This function is used to post entries to a specific ledger group. The document
+                                        data will be posted to all ledgers within that group. If only one ledger exists
+                                        in the group, the data is posted to that ledger alone.
+                                    </p>
+
+                                    <h2>Conditions for G/L Account Postings for Ledger Groups</h2>
+                                    <ul>
+                                        <li>
+                                            <strong>Currency Limitation:</strong> Only currencies assigned to the ledger
+                                            or ledger group are available for use in the postings.
+                                        </li>
+                                        <li>
+                                            <strong>Open Item Accounts:</strong> You cannot post to accounts managed on
+                                            an open-item basis.
+                                        </li>
+                                        <li>
+                                            <strong>Tax Postings:</strong> Tax-relevant postings are not allowed, nor
+                                            can postings be made to tax accounts directly.
+                                        </li>
+                                        <li>
+                                            <strong>Fiscal Year and Posting Period Validation:</strong> The system
+                                            typically uses the representative ledger of the ledger group to determine
+                                            the fiscal year variant and the current company code. It checks whether the
+                                            posting period is open for the specified company code.
+                                            <ul>
+                                                <li>If the posting period is open for the representative ledger, the
+                                                    system posts to all assigned ledgers of the group, using the
+                                                    relevant fiscal year variant for each ledger.</li>
+                                                <li>The system posts to closed periods for other ledgers as well.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <h3>Independent Period Check for Non-Representative Ledgers</h3>
+                                    <p>
+                                        If you want the system to check posting periods and fiscal year variants
+                                        independently for non-representative ledgers, enable the <strong>Manage Posting
+                                            Period</strong> option in the system's settings.
+                                    </p>
+                                    <p>
+                                        In this case, the system will only proceed with the posting if the period is
+                                        open for all ledgers in the ledger group.
+                                    </p>
+
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        This process helps manage the flexibility and control over how financial data is
+                                        recorded across multiple ledgers and ensures that posting periods and fiscal
+                                        year variants are validated correctly based on ledger group settings.
+                                    </p>
+
+                                    <h1>Fast Entry of G/L Account Line Items in SAP</h1>
+
+                                    <h2>Fast Entry Screen for G/L Account Line Items</h2>
+                                    <p>
+                                        You can use a special screen for entering line items in General Ledger (G/L),
+                                        Accounts Receivable (AR), or Accounts Payable (AP). To access it, navigate to:
+                                        <strong>Goto → G/L item fast entry</strong>.
+                                    </p>
+
+                                    <h2>Fields for Entry</h2>
+                                    <p>
+                                        On this screen, you can quickly enter data for the following fields:
+                                    </p>
+                                    <ul>
+                                        <li><strong>Pk</strong> (Posting key)</li>
+                                        <li><strong>Account</strong> (account number)</li>
+                                        <li><strong>Amount</strong></li>
+                                        <li><strong>Tx</strong> (tax on sales/purchases)</li>
+                                        <li><strong>BA</strong> (business area)</li>
+                                        <li><strong>Cost ctr</strong> (cost center)</li>
+                                        <li><strong>Order</strong></li>
+                                    </ul>
+
+                                    <h2>Screen Layout Variants</h2>
+                                    <p>
+                                        You can configure the layout for fast entry using <strong>Settings → Editing
+                                            options</strong>. The layout variant determines which fields are displayed
+                                        during document entry.
+                                    </p>
+
+                                    <h2>Required Fields</h2>
+                                    <p>
+                                        For G/L account items, only the following fields are mandatory:
+                                    </p>
+                                    <ul>
+                                        <li><strong>Pk</strong> (Posting key)</li>
+                                        <li><strong>Account</strong> (account number)</li>
+                                        <li><strong>Amount</strong> (in the line item)</li>
+                                    </ul>
+
+                                    <h2>Screen Variants</h2>
+                                    <ul>
+                                        <li>The system comes with standard screen variants for fast entry.</li>
+                                        <li>You can also define custom screen templates via <strong>Customizing</strong>
+                                            or refer to the <strong>Financial Accounting Global Settings Implementation
+                                                Guide</strong> and documentation for details on maintaining fast entry
+                                            screens for G/L account items.</li>
+                                    </ul>
+
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        This fast entry process enhances efficiency when posting G/L account items by
+                                        allowing users to quickly fill in necessary details and customize the entry
+                                        screen layout based on needs.
+                                    </p>
+
+                                    <h2>Editing Options for Document Entry</h2>
+                                    <p>
+                                        The following options can be configured for document entry:
+                                    </p>
+                                    <ul>
+                                        <li>Documents only in local currency</li>
+                                        <li>Amount fields only for document currency</li>
+                                        <li>Exchange rate from first line item</li>
+                                        <li>No special G/L transactions</li>
+                                        <li>Documents not cross-company code</li>
+                                        <li>Documents must be complete for parking</li>
+                                        <li>No partner business area in header screen</li>
+                                        <li>Calculate taxes on net amount</li>
+                                        <li>Copy text for G/L account entry</li>
+                                        <li>Fast entry via POR number</li>
+                                    </ul>
+
+                                    <h2>Default Document Currency Options</h2>
+                                    <p>
+                                        The following options are available for default document currency:
+                                    </p>
+                                    <ul>
+                                        <li>Local currency</li>
+                                        <li>Last document currency used</li>
+                                        <li>None</li>
+                                    </ul>
+
+                                    <h2>Control Display</h2>
+                                    <p>
+                                        Set the <strong>With Control Display</strong> indicator if control display is
+                                        required.
+                                    </p>
+
+                                    <h2>Special Options for Single-Screen Transactions</h2>
+                                    <p>
+                                        The following special options are available for single-screen transactions:
+                                    </p>
+                                    <ul>
+                                        <li>Suppress transaction</li>
+                                        <li>Propose final amount</li>
+                                        <li>D/C indicator as +/- sign</li>
+                                        <li>Display periods</li>
+                                        <li>Posting in special periods possible</li>
+                                    </ul>
+
+                                    <h2>Document Type Options</h2>
+                                    <p>
+                                        The following options are available for document types:
+                                    </p>
+                                    <ul>
+                                        <li>Document type suppressed</li>
+                                        <li>Document type displayed</li>
+                                        <li>Document type ready for input</li>
+                                        <li>Display with short name</li>
+                                        <li>Entry with short name</li>
+                                    </ul>
+
+                                    <h2>Additional Indicators</h2>
+                                    <p>
+                                        The following additional indicators can be configured:
+                                    </p>
+                                    <ul>
+                                        <li>Document date same as posting date</li>
+                                        <li>Complex search for vendor</li>
+                                        <li>Propose last tax code</li>
+                                    </ul>
+
+                                    <h2>Conclusion</h2>
+                                    <p>
+                                        These options allow for user-specific configurations, enhancing the flexibility
+                                        and efficiency of document entry in SAP based on individual business needs.
+                                    </p>
+                                    <h1>Here’s a summary of the Holding and Setting Data process in SAP:</h1>
+
+                                    <h3>Holding and Setting Data</h3>
+                                    <h1>Holding and Setting Data in SAP</h1>
+
+                                    <h2>Holding Data</h2>
+                                    <p>
+                                        To hold (retain) data, follow these steps:
+                                    </p>
+                                    <ol>
+                                        <li>Go to: <strong>System → User profile → Hold data</strong>.</li>
+                                        <li>The system will automatically enter this data (e.g., document date, special
+                                            G/L indicator) the next time you access the screen with the same function.
+                                        </li>
+                                        <li>You can overwrite this held data as needed.</li>
+                                    </ol>
+
+                                    <h2>Setting Data</h2>
+                                    <p>
+                                        To set (specify) data, follow these steps:
+                                    </p>
+                                    <ol>
+                                        <li>Go to: <strong>System → User profile → Set data</strong>.</li>
+                                        <li>The system will automatically fill in the specified data when you return to
+                                            the screen with the same function.</li>
+                                        <li>You cannot overwrite the set data.</li>
+                                    </ol>
+
+                                    <h2>Resetting Data</h2>
+                                    <p>
+                                        To reset held or set data, follow these steps:
+                                    </p>
+                                    <ol>
+                                        <li>Go to: <strong>System → User profile → Delete data</strong>.</li>
+                                        <li>This will clear the data previously held or set.</li>
+                                    </ol>
+                                </div>
+                                <div class="card-footer text-end">
+                                    <button type="submit" class="btn btn-primary">Download Word </button>
+                                    <button type="submit" class="btn btn-primary">Download PDF </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer footer-transparent d-print-none">
+                <div class="container-xl">
+                    <div class="row text-center align-items-center flex-row-reverse">
+
+                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                            <ul class="list-inline list-inline-dots mb-0">
+                                <li class="list-inline-item">
+                                    Copyright &copy; 2025 Artha Data Solutions.
+                                    All rights reserved.
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="./changelog.html" class="link-secondary" rel="noopener">
+                                        v0.0.3
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Libs JS -->
+    <script src="./dist/libs/apexcharts/dist/apexcharts.min.js?1738096685" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/jsvectormap.min.js?1738096685" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/maps/world.js?1738096685" defer></script>
+    <script src="./dist/libs/jsvectormap/dist/maps/world-merc.js?1738096685" defer></script>
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js?1738096685" defer></script>
+    <script src="./dist/js/demo.min.js?1738096685" defer></script>
+</body>
+
+</html>

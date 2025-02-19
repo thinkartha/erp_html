@@ -787,7 +787,7 @@
 								Overview
 							</div>
 							<h2 class="page-title">
-								Consolidations
+								AS IS
 							</h2>
 						</div>
 						<!-- Page title actions -->
@@ -805,30 +805,129 @@
 							
 							<div class="card">
 								<div class="card-body">
-									Here’s a summary of the Holding and Setting Data process in SAP:
+									This function allows posting to all ledgers in your General Ledger Accounting system. It is used to record entries across multiple ledgers with a single transaction.
+													
+													Enter G/L Account Document for Ledger Group (Single-Screen Transaction)
+													This function is used to post entries to a specific ledger group. The document data will be posted to all ledgers within that group. If only one ledger exists in the group, the data is posted to that ledger alone.
+													
+													Conditions for G/L Account Postings for Ledger Groups:
+													
+													Currency Limitation: Only currencies assigned to the ledger or ledger group are available for use in the postings.
+													Open Item Accounts: You cannot post to accounts managed on an open-item basis.
+													Tax Postings: Tax-relevant postings are not allowed, nor can postings be made to tax accounts directly.
+													Fiscal Year and Posting Period Validation: The system typically uses the representative ledger of the ledger group to determine the fiscal year variant and the current company code. It checks whether the posting period is open for the specified company code.
+													If the posting period is open for the representative ledger, the system posts to all assigned ledgers of the group, using the relevant fiscal year variant for each ledger.
+													The system posts to closed periods for other ledgers as well.
+													Independent Period Check for Non-Representative Ledgers:
+													
+													If you want the system to check posting periods and fiscal year variants independently for non-representative ledgers, enable the Manage Posting Period option in the system's settings.
+													In this case, the system will only proceed with the posting if the period is open for all ledgers in the ledger group.
+													This process helps manage the flexibility and control over how financial data is recorded across multiple ledgers and ensures that posting periods and fiscal year variants are validated correctly based on ledger group settings.
+												
+                                                    <br><br>
+                                    Fast Entry Screen for G/L Account Line Items
+                                    You can use a special screen for entering line items in General Ledger (G/L), Accounts Receivable (AR), or Accounts Payable (AP). To access it, navigate to:
+                                    Goto → G/L item fast entry.
+                                    
+                                    Fields for Entry
+                                    On this screen, you can quickly enter data for the following fields:
+                                    
+                                    Pk (Posting key)
+                                    Account (account number)
+                                    Amount
+                                    Tx (tax on sales/purchases)
+                                    BA (business area)
+                                    Cost ctr (cost center)
+                                    Order
+                                    Screen Layout Variants
+                                    You can configure the layout for fast entry using Settings → Editing options. The layout variant determines which fields are displayed during document entry.
+                                    
+                                    Required Fields
+                                    For G/L account items, only the following fields are mandatory:
+                                    
+                                    Pk (Posting key)
+                                    Account (account number)
+                                    Amount (in the line item)
+                                    Screen Variants
+                                    
+                                    The system comes with standard screen variants for fast entry.
+                                    You can also define custom screen templates via Customizing or refer to the Financial Accounting Global Settings Implementation Guide and documentation for details on maintaining fast entry screens for G/L account items.
+                                    This fast entry process enhances efficiency when posting G/L account items by allowing users to quickly fill in necessary details and customize the entry screen layout based on needs.
+                                    <br><br>
+                                    Accessing Editing Options:
+													
+													Go to the SAP Easy Access menu.
+													Navigate to Accounting → Financial Accounting → General Ledger, Accounts Receivable, or Accounts Payable → Posting.
+													Select the relevant business transaction and choose Editing Options.
+													Editing Options for Document Entry:
+													
+													Documents only in local currency
+													Amount fields only for document currency
+													Exchange rate from first line item
+													No special G/L transactions
+													Documents not cross-company code
+													Documents must be complete for parking
+													No partner business area in header screen
+													Calculate taxes on net amount
+													Copy text for G/L account entry
+													Fast entry via POR number
+													Default Document Currency Options:
+													
+													Local currency
+													Last document currency used
+													None
+													Control Display:
+													
+													Set the With Control Display indicator if control display is required.
+													Special Options for Single-Screen Transactions:
+													
+													Suppress transaction
+													Propose final amount
+													D/C indicator as +/- sign
+													Display periods
+													Posting in special periods possible
+													Document Type Options:
+													
+													Document type suppressed
+													Document type displayed
+													Document type ready for input
+													Display with short name
+													Entry with short name
+													Additional Indicators:
+													
+													Document date same as posting date
+													Complex search for vendor
+													Propose last tax code
+													These options allow for user-specific configurations, enhancing the flexibility and efficiency of document entry in SAP based on individual business needs.
 
-Holding and Setting Data
-Holding Data
+                                                    <br><br>
 
-To hold (retain) data, go to:
-System → User profile → Hold data.
-The system will automatically enter this data (e.g., document date, special G/L indicator) the next time you access the screen with the same function.
-You can overwrite this held data as needed.
-Setting Data
+                                    Holding and Setting Data
+													Holding Data
+													
+													To hold (retain) data, go to:
+													System → User profile → Hold data.
+													The system will automatically enter this data (e.g., document date, special G/L indicator) the next time you access the screen with the same function.
+													You can overwrite this held data as needed.
+													Setting Data
+													
+													To set (specify) data, go to:
+													System → User profile → Set data.
+													The system will automatically fill in the specified data when you return to the screen with the same function.
+													You cannot overwrite the set data.
+													Resetting Data
+													
+													To reset held or set data, go to:
+													System → User profile → Delete data.
+													This will clear the data previously held or set.
+													This process allows for more efficient data entry by saving commonly used information and preventing repeated manual input.
 
-To set (specify) data, go to:
-System → User profile → Set data.
-The system will automatically fill in the specified data when you return to the screen with the same function.
-You cannot overwrite the set data.
-Resetting Data
 
-To reset held or set data, go to:
-System → User profile → Delete data.
-This will clear the data previously held or set.
-This process allows for more efficient data entry by saving commonly used information and preventing repeated manual input.
 								</div>
 								<div class="card-footer text-end">
-                                    <button type="submit" class="btn btn-primary">Sign off </button>
+                                    <a href="ai-generated.html"><button type="submit" class="btn btn-primary">Use AI</button></a>
+                                    <a href=""><button type="submit" class="btn btn-primary">Download Word</button></a>
+                                    <a href=""><button type="submit" class="btn btn-primary">Download PDF</button></a>
                                 </div>
 							</div>
 							
